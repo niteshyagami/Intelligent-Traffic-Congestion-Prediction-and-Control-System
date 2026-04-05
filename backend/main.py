@@ -8,7 +8,7 @@ Endpoints:
     GET  /api/v1/signals         — Get current signal states
     GET  /api/v1/model-info      — Get ML model metadata
     GET  /health                 — Health check
-    GET  /                       — Serve dashboard
+    GET  /                       — Serves dashboard
 """
 
 import sys
