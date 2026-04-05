@@ -4,9 +4,7 @@ services:
     runtime: python
     pythonVersion: 3.11
     
-    buildCommand: >
-      pip install --upgrade pip &&
-      pip install -r backend/requirements.txt
+    buildCommand: pip install -r requirements.txt
     startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
     
     envVars:
