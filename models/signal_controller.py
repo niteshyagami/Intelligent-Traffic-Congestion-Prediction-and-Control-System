@@ -17,7 +17,7 @@ import math
 
 @dataclass
 class LaneSignalState:
-    """Signal state for a single lane."""
+    """Signal state for a single lane :-"""
     lane_id: str
     green_duration: int  # seconds
     red_duration: int
