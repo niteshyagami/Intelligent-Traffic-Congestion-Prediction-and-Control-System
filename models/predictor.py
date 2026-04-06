@@ -72,7 +72,7 @@ class BiLSTMAttentionPredictor(nn.Module):
         self.hidden_dim = hidden_dim
         self.num_layers = num_layers
 
-        # Input projection
+        # Input projections
         self.input_proj = nn.Sequential(
             nn.Linear(input_dim, hidden_dim),
             nn.ReLU(),
