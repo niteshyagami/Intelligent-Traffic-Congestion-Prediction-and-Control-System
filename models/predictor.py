@@ -89,7 +89,7 @@ class BiLSTMAttentionPredictor(nn.Module):
             dropout=dropout if num_layers > 1 else 0,
         )
 
-        # Merge bidirectional outputs
+        # Merge bidirectional outputs :
         self.bi_merge = nn.Linear(hidden_dim * 2, hidden_dim)
 
         # Multi-Head Self-Attention
