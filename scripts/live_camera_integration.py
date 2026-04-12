@@ -14,7 +14,7 @@ from signal_controller import AdaptiveSignalController
 # RTSP is the standard protocol for CCTV cameras setup at traffic junctions.
 RTSP_URL = "rtsp://admin:password@192.168.1.100:554/stream1"
 
-# For testing right now, 0 means your laptop's WebCam
+# For testing right now, 0 means your laptop's/pc's WebCam
 CAMERA_SOURCE = 0 
 
 def main():
