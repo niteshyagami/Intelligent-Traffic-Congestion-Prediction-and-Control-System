@@ -14,7 +14,7 @@ import math
 
 
 class MultiHeadSelfAttention(nn.Module):
-    """Multi-Head Self-Attention mechanism for temporal importance weighting."""
+    """Multi-Head Self-Attention mechanism for temporal importance weighting.."""
 
     def __init__(self, d_model: int, num_heads: int = 4, dropout: float = 0.1):
         super().__init__()
