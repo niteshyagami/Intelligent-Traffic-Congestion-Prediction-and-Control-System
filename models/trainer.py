@@ -40,7 +40,7 @@ def train_model(
         device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"[Trainer] Device: {device}", flush=True)
 
-    # Load data
+    # Load data :
     df = load_and_engineer()
 
     # Subsample for faster CPU training while preserving class distribution
