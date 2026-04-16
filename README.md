@@ -50,6 +50,21 @@ uvicorn main:app --reload --port 8000
 ### 5. Open Dashboard
 Visit **http://localhost:8000** in your browser.
 
+## Deploy (Render)
+
+This repo includes a `render.yaml` so you can deploy directly from GitHub.
+
+1. Push this project to a GitHub repository.
+2. In Render, create a **Blueprint** and select your repo.
+3. Render will use:
+   - Build: `pip install -r backend/requirements.txt`
+   - Start: `uvicorn backend.main:app --host 0.0.0.0 --port $PORT`
+4. After deploy, open your Render URL (the dashboard is served at `/`).
+
+Notes:
+- `frontend/index.html` is already configured to call the API using the same host (`window.location.origin`), so no extra frontend env vars are needed.
+- Ensure model/data assets are present in the repository (`saved_models/`, `data/indian_smart_traffic.csv`, `backend/yolo11x.pt`), since the app loads them at startup.
+
 ## Dashboard Features
 
 | Tab | Feature |

@@ -265,7 +265,7 @@
     </main>
 
     <script>
-    const API = 'http://localhost:8000'; // Hardcoded backend port
+    const API = window.location.origin; // Use same host in production and local runs
     let predChart = null, signalChart = null, trainingChart = null;
     let webcamStream = null;
     let videoFilePlayer = null;
